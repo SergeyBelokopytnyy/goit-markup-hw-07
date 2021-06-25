@@ -1,0 +1,90 @@
+.project-list {
+  flex-wrap: wrap;
+}
+.project-list__text {
+  line-height: 1.9;
+  font-size: 16px;
+  color: var(--primary-text-color);
+}
+
+.project-list__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.project-list {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.project-list__cards {
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-top: 20px;
+  border: 1px solid var(--border-cards-color);
+  border-top: none;
+}
+
+.project-list__link {
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-list__link:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+/* ДОБАВЛЯЕМ ОВЕРЛАЙ С ТЕКСТОМ К КАРТОЧКАМ */
+
+.project-list__thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-list__overlay {
+  padding: 63px 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0;
+  transform: translateY(100%);
+
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list__link:hover .project-list__overlay,
+.project-list__link:focus .project-list__overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-list__link:hover .project-list__thumb::before,
+.project-list__link:focus .project-list__thumb::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-list__thumb::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-cards-color);
+  opacity: 0;
+  transform: translateY(100%);
+
+  transition-property: opacity, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
