@@ -2,11 +2,13 @@
   font-size: 14px;
   line-height: 1.7;
 }
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .features-list__item {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features-list__icon {

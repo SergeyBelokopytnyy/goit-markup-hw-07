@@ -8,6 +8,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   background-color: transparent;
   color: var(--white-color);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-address-color);
+  }
 }
 
 .button--subscription {
@@ -33,9 +39,4 @@
 .form-footer__subscription {
   display: inline-block;
   position: relative;
-}
-.form-footer__item::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--text-address-color);
 }

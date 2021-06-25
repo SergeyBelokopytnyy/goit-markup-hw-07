@@ -4,6 +4,11 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-list__link:focus &,
+  .social-list__link:hover & {
+    fill: var(--white-color);
+  }
 }
 
 .social-list__link {
@@ -18,14 +23,11 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-list__link:focus,
-.social-list__link:hover {
-  background-color: var(--accent-color);
-}
-.social-list__link:focus .social-list__icon,
-.social-list__link:hover .social-list__icon {
-  fill: var(--white-color);
+
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }
 .social {
   width: 206px;
