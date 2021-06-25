@@ -127,6 +127,17 @@ img {
   font-family: inherit;
 }
 
+/* ФЛЕКСЫ НА СТРАНИЦАХ */
+
+.all-flexx {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.project-list {
+  flex-wrap: wrap;
+}
+
 /* ДОБАВЛЯЕМ В СЕКЦИЮ ГЕРОЙ ИЗОБРАЖЕНИЕ И ГРАДИЕНТ */
 
 .hero {
@@ -154,32 +165,12 @@ img {
 footer {
   background-color: var(--footer-color);
 }
-.team li {
-  background-color: var(--white-color);
-}
 
 /* КНОПКИ-ФИЛЬТР В СЕКЦИИ ПОРТФОЛИО */
 
 .portfol-list {
   margin-bottom: 50px;
 }
-
-/* .portfol-list__button {
-  background-color: var(--section-color);
-  color: var(--secondary-text-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  text-align: center;
-  font-family: inherit;
-  border-radius: 4px;
-  padding: 6px 22px;
-  border-color: transparent;
-
-  transition-property: background-color, color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-} */
 
 .button--portfolio {
   background-color: var(--section-color);
@@ -328,68 +319,6 @@ footer {
   border-radius: 2px;
 }
 
-/* АДРЕСА ДЛЯ ФУТЕРА */
-
-.foot-info {
-  margin-right: 70px;
-}
-
-.foot-info__item {
-  color: var(--text-address-color);
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-  text-decoration: none;
-}
-
-.foot-info__maps {
-  color: var(--white-color);
-}
-.foot-info__address {
-  margin-top: 20px;
-}
-
-.address__icon {
-  display: flex;
-  margin-right: 10px;
-  fill: var(--primary-text-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.container-foot {
-  padding-bottom: 60px;
-  padding-top: 60px;
-  display: flex;
-  align-items: baseline;
-}
-
-.social {
-  width: 206px;
-  margin-right: 93px;
-}
-.social .social-list {
-  justify-content: space-between;
-}
-
-.social__title {
-  font-size: 14px;
-  color: var(--white-color);
-  text-transform: uppercase;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.social .social-list__icon {
-  fill: var(--white-color);
-}
-
-.social .social-list__link {
-  background-color: var(--social-background-foot);
-}
-
 /* ОСОБЕННОСТИ (скрытый заголовок) */
 
 .features-list__title {
@@ -485,6 +414,7 @@ footer {
   margin-bottom: 16px;
 }
 .team-list__item {
+  background-color: var(--white-color);
   margin-left: 30px;
   margin-top: 30px;
   border-radius: 0px 0px 4px 4px;
@@ -536,6 +466,68 @@ footer {
 .social-list__link:focus .social-list__icon,
 .social-list__link:hover .social-list__icon {
   fill: var(--white-color);
+}
+/* АДРЕСА ДЛЯ ФУТЕРА */
+
+.foot-info {
+  margin-right: 70px;
+}
+
+.foot-info__item {
+  color: var(--text-address-color);
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.foot-info__maps {
+  color: var(--white-color);
+}
+.foot-info__address {
+  margin-top: 20px;
+}
+
+.address__icon {
+  display: flex;
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.container-foot {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  display: flex;
+  align-items: baseline;
+}
+
+.social {
+  width: 206px;
+  margin-right: 93px;
+}
+
+.social-list--position {
+  justify-content: space-between;
+}
+
+.social__title {
+  font-size: 14px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.social-list__icon--color {
+  fill: var(--white-color);
+}
+
+.social-list__link--color {
+  background-color: var(--social-background-foot);
 }
 
 /* НАШИ ПРОЕКТЫ */
@@ -661,17 +653,6 @@ footer {
   margin-right: 50px;
 }
 
-/* ФЛЕКСЫ НА СТРАНИЦАХ */
-
-.all-flexx {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.project-list {
-  flex-wrap: wrap;
-}
-
 /* РАЗДВИГАЕМ СЕКЦИИ */
 
 .section {
@@ -701,8 +682,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 106px;
-  height: 60px; */
 
   width: 170px;
   height: 92px;
