@@ -12,7 +12,7 @@
 
 /* КНОПКИ-ФИЛЬТР В СЕКЦИИ ПОРТФОЛИО */
 
-.portfol-list {
+.portfol__list {
   margin-bottom: 50px;
 }
 
@@ -38,7 +38,7 @@
   }
 }
 
-.portfol-list__item:not(:last-child) {
+.portfol__item:not(:last-child) {
   margin-right: 8px;
 }
 

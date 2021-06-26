@@ -12,25 +12,23 @@
 
 /* ОСОБЕННОСТИ (скрытый заголовок) */
 
-.features-list__title {
+.features__title {
   color: var(--secondary-text-color);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.17;
-}
-
-.features-list__title {
   margin-bottom: 10px;
 }
 
-.work__title {
+.title {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   margin-bottom: 50px;
+  color: var(--secondary-text-color);
 }
 
-.work-list__title {
+.work__title {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -46,7 +44,7 @@
   background-color: var(--work-item-color);
 }
 
-.team-list__title {
+.team__name {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.2;
@@ -55,19 +53,11 @@
   margin-bottom: 10px;
 }
 
-.project-list__title {
+.project__title {
   color: var(--secondary-text-color);
   font-size: 18px;
   line-height: 2;
   margin-bottom: 4px;
-}
-
-.clients__title {
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--secondary-text-color);
 }
 
 .form__title {
@@ -77,12 +67,4 @@
   color: var(--secondary-text-color);
   line-height: 1.2;
   margin-bottom: 12px;
-}
-
-.team__title {
-  color: var(--secondary-text-color);
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  margin-bottom: 50px;
 }

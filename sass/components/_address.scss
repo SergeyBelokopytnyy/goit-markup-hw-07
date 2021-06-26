@@ -1,4 +1,4 @@
-.address__contact {
+.address__link {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
@@ -46,8 +46,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  .address__contact:focus &,
-  .address__contact:hover & {
+  .address__link:focus &,
+  .address__link:hover & {
     fill: var(--accent-color);
   }
 }

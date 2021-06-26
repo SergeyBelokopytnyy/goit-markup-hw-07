@@ -4,9 +4,9 @@
 @import './base/container';
 @import './utils/visually-hidden';
 @import './components/button';
-@import './components/social-link-list';
+@import './components/social-link';
 @import './components/title';
-@import './components/site-nav-list';
+@import './components/site-nav';
 @import './components/address';
 @import './components/logo';
 @import './components/backdrop';
@@ -17,7 +17,7 @@
 @import './layout/hero';
 @import './layout/features';
 @import './layout/work';
-@import './layout/team-list';
-@import './layout/project-list';
-@import './layout/clients-list';
+@import './layout/team';
+@import './layout/project';
+@import './layout/clients';
 @import './layout/footer';

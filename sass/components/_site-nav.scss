@@ -1,4 +1,4 @@
-.site-nav-list__link {
+.site-nav__link {
   color: var(--secondary-text-color);
   font-size: 14px;
   font-weight: 500;
@@ -13,7 +13,7 @@
     color: var(--accent-color);
   }
 }
-.site-nav-list__link--current {
+.site-nav__link--current {
   color: var(--accent-color);
   position: relative;
 
@@ -28,10 +28,10 @@
     border-radius: 2px;
   }
 }
-.site-nav-list {
+.site-nav__list {
   display: flex;
   flex-direction: row;
 }
-.site-nav-list__item:not(:last-child) {
+.site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
