@@ -1,3 +1,6 @@
+.clients__list {
+  @extend %all-flexx;
+}
 .clients__company {
   display: flex;
   justify-content: center;

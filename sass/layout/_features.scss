@@ -1,3 +1,6 @@
+.features__list {
+  @extend %all-flexx;
+}
 .features__text {
   font-size: 14px;
   line-height: 1.7;

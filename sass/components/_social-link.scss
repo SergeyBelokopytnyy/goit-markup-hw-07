@@ -35,6 +35,7 @@
 }
 
 .social__list--position {
+  @extend %all-flexx;
   justify-content: space-between;
 }
 

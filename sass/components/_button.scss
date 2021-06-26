@@ -13,6 +13,7 @@
 /* КНОПКИ-ФИЛЬТР В СЕКЦИИ ПОРТФОЛИО */
 
 .portfol__list {
+  @extend %all-flexx;
   margin-bottom: 50px;
 }
 
